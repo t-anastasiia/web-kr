@@ -1,0 +1,148 @@
+.accent__underline {
+  height: 5px;
+  width: 8vw;
+  background-color: var(--accent-color);
+  margin: 15px auto 50px auto;
+}
+
+.content__container {
+  align-items: center;
+  display: flex;
+  margin: 30px 0;
+  gap: 10px;
+}
+
+.video-container {
+  margin: 0 auto;
+  width: var(--video-width);
+  height: var(--video-height);
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.options__container {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.options {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.option__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 50px 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(233, 233, 233);
+  margin: 0 10px;
+}
+
+.options .option__item:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.options .option__item:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.options .option__item:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.options .option__item:nth-child(4) {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.options .option__item:nth-child(5) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.options .option__item:nth-child(6) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.options .option__item:nth-child(7) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.options .option__item:nth-child(8) {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.option__number {
+  color: var(--accent-color);
+  padding: 0 10px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid var(--accent-color);
+}
+
+.option__title {
+  font-size: 20px;
+}
+
+/*================ BREAKPOINTS ================*/
+
+@media screen and (max-width: 1400px) {
+  .option__number {
+    font-size: 20px;
+    padding: 0 7px;
+  }
+}
+
+@media screen and (max-width: 1276px) {
+  .accent__underline {
+    width: 13vw;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  :root {
+    --video-width: 80vw;
+  }
+  
+  .home__subtitle {
+    padding: 0 10px;
+  }
+
+  .content__container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 608px) {
+
+  .accent__underline {
+    height: 2px;
+    width: 20vw;
+    background-color: var(--accent-color);
+    margin: 7px auto 20px auto;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .options .option__item {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}

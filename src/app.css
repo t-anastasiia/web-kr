@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+  --header-height: 63px;
+
+  --video-width: 36vw;
+  --video-height: calc(var(--video-width) * 9 / 16);
+
+  --background-color: rgb(245, 245, 245);
+  --accent-color: #d23a86;
+  --text-light: rgb(122, 122, 122);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.page {
+  align-items: center;
+  margin: 0 10vw;
+  margin-top: calc(var(--header-height) * 2 + 50px);
+}
+
+h1 {
+  font-weight: lighter;
+  text-align: center;
+}
+
+.subtitle {
+  padding: 0 100px;
+  text-align: center;
+  font-size: 20px;
+  color: var(--text-light);
+}
+
+/*================ BREAKPOINTS ================*/
+
+@media screen and (max-width: 1400) {
+}
+
+@media screen and (max-width: 986px) {
+    .subtitle {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 608px) {
+  .page {
+    margin: 0 5vw;
+    margin-top: calc(var(--header-height) * 2 + 30px);
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    padding: 0;
+  }
+}

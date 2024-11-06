@@ -1,0 +1,155 @@
+.tarifs__title {
+  padding-bottom: 20px;
+}
+
+.items_container {
+  margin: 20px 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.item {
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  padding: 20px;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  display: none;
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: auto;
+  border: 1px solid var(--accent-color);
+}
+
+.item:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.item:hover .button {
+  display: block;
+}
+
+.item__img {
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.item__description {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.item__work {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.checkmark {
+  color: var(--accent-color); /* Цвет галочки */
+  margin-right: 8px; /* Отступ справа от галочки */
+}
+
+/*================== BREAKPOINTS ================*/
+
+@media screen and (max-width: 1160px) {
+  .items_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .item {
+    justify-self: center;
+    padding: 40px;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .item__description {
+    padding: 20px;
+  }
+
+  .button {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .item {
+    height: 50vw;
+  }
+
+  .item__img {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 608px) {
+  * {
+    box-sizing: border-box;
+  }
+  .tarifs__title {
+    padding-bottom: 10px;
+  }
+
+  .items_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .item {
+    justify-self: center;
+    padding: 20px;
+    width: 90vw;
+    height: auto;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .item__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .item__description {
+    flex: unset;
+    list-style: none;
+    padding: 0;
+  }
+
+  .button {
+    margin-top: 10px;
+    padding: 10px;
+    align-self: center;
+    width: fit-content;
+  }
+
+  .item__img {
+    height: 30px;
+  }
+}

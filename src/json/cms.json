@@ -1,0 +1,43 @@
+[
+    {
+      "name": "WordPress",
+      "logo": "src/assets/wordpress.jpeg",
+      "includedWorks": [
+        "Разработка / верстка",
+        "Дизайн",
+        "Контент",
+        "Хостинг"
+      ]
+    },
+    {
+      "name": "Magento",
+      "logo": "src/assets/magento.jpeg",
+      "includedWorks": [
+        "Разработка / верстка",
+        "Дизайн",
+        "Контент",
+        "Хостинг"
+      ]
+    },
+    {
+      "name": "1C-Битрикс",
+      "logo": "src/assets/bitriks.jpeg",
+      "includedWorks": [
+        "Разработка / верстка",
+        "Дизайн",
+        "Контент",
+        "Хостинг"
+      ],
+      "button": "Оставить заявку"
+    },
+    {
+      "name": "Opencart",
+      "logo": "src/assets/opencart.jpeg",
+      "includedWorks": [
+        "Разработка / верстка",
+        "Дизайн",
+        "Контент",
+        "Хостинг"
+      ]
+    }
+  ]
