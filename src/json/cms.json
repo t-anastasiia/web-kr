@@ -1,7 +1,7 @@
 [
     {
       "name": "WordPress",
-      "logo": "src/assets/wordpress.jpeg",
+      "logo": "./src/assets/wordpress.jpeg",
       "includedWorks": [
         "Разработка / верстка",
         "Дизайн",
@@ -11,7 +11,7 @@
     },
     {
       "name": "Magento",
-      "logo": "src/assets/magento.jpeg",
+      "logo": "./src/assets/magento.jpeg",
       "includedWorks": [
         "Разработка / верстка",
         "Дизайн",
@@ -21,7 +21,7 @@
     },
     {
       "name": "1C-Битрикс",
-      "logo": "src/assets/bitriks.jpeg",
+      "logo": "./src/assets/bitriks.jpeg",
       "includedWorks": [
         "Разработка / верстка",
         "Дизайн",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Opencart",
-      "logo": "src/assets/opencart.jpeg",
+      "logo": "./src/assets/opencart.jpeg",
       "includedWorks": [
         "Разработка / верстка",
         "Дизайн",
